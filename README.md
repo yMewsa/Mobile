@@ -54,3 +54,28 @@ type null > "README.md" - Criar o arquivo README
         - IDE: VSCode, Android Studio
         - Linguagens: Dart
         - Ambiente: Mac, Windows, Linux
+
+# Aula - 10/02
+## Periodo - Manhã
+## Preparação do Ambiente de Desenvolvimento
+
+## Instalação do FlutterSDK
+- Download do arquivo ZIP na página flutter.dev
+- Inclusão do flutter na pasta C:\src
+- Inclusão do flutter\bin nas varáveis de ambiente
+- Teste o flutter --version
+
+### Instalação do AndroidSDK
+- Download do Android SDK - Command Line Tools
+- Adicionar o Command-line ao c:\src\AndroidSDK
+- Adicionar o SKDManager as Variáveis de Ambiente
+- Download dos pacotes
+    - Emulador
+    - Platforms
+    - Platform-tools
+    - Build-tools
+
+- Adicionar ADB e o Emulator as Variáveis de Ambiente 
+
+- Criação da Imagem do Emulador
+- Build do Emulador
