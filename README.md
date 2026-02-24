@@ -79,3 +79,22 @@ type null > "README.md" - Criar o arquivo README
 
 - Criação da Imagem do Emulador
 - Build do Emulador
+
+## Criação de Projetos e Códigos na Linha de Comando
+
+- Criação de Projetos
+    - `flutter create <nome_do_app>`
+        - flags (parâmetros):
+            - --empty : Cria um aplicativo "vazio" (Hello World!)
+            - --platforms : Permite a seleção de uma plataforma de desenvolvimento
+                - ex: `--platforms=android` (a criação do projeto será somente para a plataforma android)
+    - Exemplo de criação de uma aplicativo android vazio
+        - `flutter create nome_do_app --empty --platforms=android`
+        - Obs: nome do aplicativo tem que ter todas as letras minuscular, separação de palavras com _
+    - `flutter Doctor`
+        - Permite correção de pequenos problemas no Flutter e identificação de parâmetros funcionais em relação as plataformas de desenvolvimento
+        - Sempre rodas o `flutter doctor` no começo do desenvolvimento
+    - `flutter clean`
+        - limpa o cache do build
+    - `flutter run -v`
+        - build do app (apk)
