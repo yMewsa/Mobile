@@ -98,3 +98,34 @@ type null > "README.md" - Criar o arquivo README
         - limpa o cache do build
     - `flutter run -v`
         - build do app (apk)
+
+    - Gerenciamento de dependências do PubSec ()    
+        - Instalação
+           - flutter pub add nome_dependencia
+        - Outros comando do flutter pub (dependências)
+            - flutter pub outdated (Verifica se as dependências estão desatualizadas)
+            - flutter pub upgrade (Atualiza as dependências do flutter pub)
+### Estrutura de um Aplicativo
+
+#### A Hierarquia de Árvore
+
+Gráfico com Demonstração da Hierarquia
+
+    ```mermaid
+    graph BT
+
+        MA['MaterialAPP']
+        STL['StateLess Widget']
+        STF['StateFul Widget']
+        SC['Scaffold']
+        ABar['AppBar']
+        BD['Body']
+        BNBar['BottonNavigationBar']
+        DW['Drawer']
+        FAB['FloatActionButton']
+        SB['SnackBar']
+
+        MA --> STL & STF
+        STF & STL --> SC
+        SC --> BD & BNBar & DW & FAB & SB
+    ```
