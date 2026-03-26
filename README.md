@@ -111,21 +111,23 @@ type null > "README.md" - Criar o arquivo README
 
 Gráfico com Demonstração da Hierarquia
 
-    ```mermaid
-    graph BT
+```mermaid
 
-        MA['MaterialAPP']
-        STL['StateLess Widget']
-        STF['StateFul Widget']
-        SC['Scaffold']
-        ABar['AppBar']
-        BD['Body']
-        BNBar['BottonNavigationBar']
-        DW['Drawer']
-        FAB['FloatActionButton']
-        SB['SnackBar']
+graph BT
 
-        MA --> STL & STF
-        STF & STL --> SC
-        SC --> BD & BNBar & DW & FAB & SB
-    ```
+    MA['MaterialAPP']
+    STL['StateLess Widget']
+    STF['StateFul Widget']
+    SC['Scaffold']
+    ABar['AppBar']
+    BD['Body']
+    BNBar['BottonNavigationBar']
+    DW['Drawer']
+    FAB['FloatActionButton']
+    SB['SnackBar']
+
+    MA --> STL & STF
+    STF & STL --> SC
+    SC --> ABar & BD & BNBar & DW & FAB & SB
+
+```
