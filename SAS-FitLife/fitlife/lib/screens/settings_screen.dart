@@ -15,7 +15,23 @@ class SettingsScreen extends StatelessWidget {
     );
 
     return Scaffold(
-      appBar: AppBar(title: const Text('FitLife')),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.green[200],
+        elevation: 0,
+        title: Row(
+          children: [
+            const SizedBox(width: 12),
+            const Text(
+              'FitLife',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

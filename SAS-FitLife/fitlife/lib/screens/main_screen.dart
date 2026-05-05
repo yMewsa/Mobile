@@ -12,6 +12,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final navProvider = Provider.of<NavigationProvider>(context);
     return Scaffold(
+      backgroundColor: Colors.white,
       body: IndexedStack(
         index: navProvider.currentIndex,
         children: const [

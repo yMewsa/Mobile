@@ -19,7 +19,23 @@ class DashboardScreen extends StatelessWidget {
         : (concluidas / meta * 100).clamp(0, 100).toInt();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('FitLife')),
+      appBar: AppBar(
+        backgroundColor: Colors.green[200],
+        elevation: 0,
+        title: Row(
+          children: [
+            const SizedBox(width: 12),
+            const Text(
+              'FitLife',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
